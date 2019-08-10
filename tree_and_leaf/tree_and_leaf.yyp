@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0d777802-7323-4e47-96e6-0b5d95d0ee6b",
+            "Value": {
+                "id": "ca596a49-74d7-4c0d-9804-4b73afda180d",
+                "resourcePath": "objects\\oFlying_platform\\oFlying_platform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "11e4510b-0f48-4860-902b-4be406eb4bed",
             "Value": {
                 "id": "d39f8fff-f77b-4dc7-bab7-706c91e28e37",
@@ -44,6 +52,22 @@
                 "id": "08a9be2e-2348-4067-834d-22881003c0f9",
                 "resourcePath": "views\\157e4510-8046-4dfa-90ce-82f0e97c7603.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "162040ca-1fde-4e50-ae64-8d6d35732a61",
+            "Value": {
+                "id": "7471041d-a360-4df0-a361-432b77ebce59",
+                "resourcePath": "objects\\oShade\\oShade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "164cefdc-a358-4619-a24a-459469a552fa",
+            "Value": {
+                "id": "9cc7b774-eb32-4357-a096-86914fd21b62",
+                "resourcePath": "objects\\oGravity\\oGravity.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -207,6 +231,14 @@
             }
         },
         {
+            "Key": "77d8a60e-d6b6-4489-b088-5654ff4d38b2",
+            "Value": {
+                "id": "3e300f34-ee1a-43a9-96a3-33566f5af4d3",
+                "resourcePath": "sprites\\sFlying_platform\\sFlying_platform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "790d51fc-e420-4527-b893-2fbbcbdd3905",
             "Value": {
                 "id": "1de48aa7-99fe-4e4d-8d52-6f3738474d23",
@@ -299,6 +331,14 @@
             "Value": {
                 "id": "9b153aec-809e-4f47-98a0-c5baee2fb079",
                 "resourcePath": "objects\\oTriangle\\oTriangle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c001aabf-bc3d-470a-9d5d-2cbb551acf34",
+            "Value": {
+                "id": "f915e7ea-5e6a-4a4d-9626-20d6611a87d4",
+                "resourcePath": "objects\\oFaling_platform\\oFaling_platform.yy",
                 "resourceType": "GMObject"
             }
         },

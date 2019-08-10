@@ -8,10 +8,13 @@ dir = 0;
 move = 0;
 
 grav = 30;
-
+gravity_change = false;
 
 normal_friction = 0.5;
 
+
+x_start = x;
+y_start = y;
 
 
 acceleration = 0.1;

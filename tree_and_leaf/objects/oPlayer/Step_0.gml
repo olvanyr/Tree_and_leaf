@@ -89,11 +89,11 @@ if(input.jump && !jumping)
 
 //change gravity
 
-if keyboard_check_pressed(ord("P"))
+if gravity_change != global.gravity_change
 {
 	grav = -grav;
 	jump_impultion = -jump_impultion;
-	physics_world_gravity(0, grav);
 }
+gravity_change = global.gravity_change;
 
 physics_world_gravity(0, grav);

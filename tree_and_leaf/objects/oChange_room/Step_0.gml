@@ -5,4 +5,6 @@ if place_meeting(x,y,oPlayer)
 	oPlayer.y = y_next;
 	oCamera.x = x_next;
 	oCamera.y = y_next;
+	oPlayer.x_start = x_next;
+	oPlayer.y_start = y_next;
 }
