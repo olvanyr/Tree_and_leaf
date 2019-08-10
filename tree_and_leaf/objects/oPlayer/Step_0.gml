@@ -1,12 +1,24 @@
-/// @desc
+if !instance_exists(oInput)
+{
+	input = instance_create_layer(0,0,"Instances",oInput);
+}
 
+phy_fixed_rotation = true;
 friction = normal_friction;
 
-if last_grounded != grounded && grounded == true
+
+if last_grounded != grounded && grounded == true && jump_timer > 20
 {
 	move_speed = 0;
 	screenshake(4,3);
 }
+
+if jumping
+{
+	jump_timer ++;
+}else jump_timer = 0;
+
+
 last_grounded = grounded
 
 //move
@@ -83,3 +95,5 @@ if keyboard_check_pressed(ord("P"))
 	jump_impultion = -jump_impultion;
 	physics_world_gravity(0, grav);
 }
+
+physics_world_gravity(0, grav);

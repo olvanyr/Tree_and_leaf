@@ -9,8 +9,6 @@ move = 0;
 
 grav = 30;
 
-phy_fixed_rotation = true;
-
 
 normal_friction = 0.5;
 
@@ -28,6 +26,7 @@ air_speed_max = air_speed;
 jumping = true;
 jump_dir = 0;
 jump_impultion = 38;
+jump_timer = 0;
 
 physics_world_gravity(0, grav);
 
