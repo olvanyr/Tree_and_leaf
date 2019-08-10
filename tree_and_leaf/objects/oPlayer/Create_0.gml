@@ -2,6 +2,7 @@ input = noone;
 
 jumping = true;
 grounded = false;
+last_grounded = false;
 
 dir = 0;
 move = 0;

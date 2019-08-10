@@ -1,13 +1,15 @@
 
 
-grounded = true;
+
 
 
 if grav < 0
 {
+	
 	if place_meeting(x,y - 1, oCollision)
 	{
 		jumping = false;
+		grounded = true;
 	
 		if dir == 0 && !input.jump
 		{
@@ -21,6 +23,7 @@ if grav > 0
 	if place_meeting(x,y + 1, oCollision)
 	{
 		jumping = false;
+		grounded = true;
 	
 		if dir == 0 && !input.jump
 		{
