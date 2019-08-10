@@ -5,6 +5,7 @@ friction = normal_friction;
 if last_grounded != grounded && grounded == true
 {
 	move_speed = 0;
+	screenshake(4,3);
 }
 last_grounded = grounded
 
@@ -21,6 +22,7 @@ if input.left
 
 if !input.right && !input.left && !jumping
 {
+	dir = 0;
 	move_speed -= acceleration;
 	air_speed -= acceleration;
 }else
@@ -67,6 +69,7 @@ if grav > 0
 if(input.jump && !jumping)
 {
 	physics_apply_impulse(x,y,0,-jump_impultion);
+	screenshake(3,3);
 	jumping = true;
 	grounded = false;
 }
