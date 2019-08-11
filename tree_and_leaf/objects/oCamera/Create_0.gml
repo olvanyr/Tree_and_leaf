@@ -2,8 +2,10 @@
 cam = view_camera[0];
 follow = noone;
 
-view_w = 1024;
-view_h = 768;
+//view_w = 1024;
+//view_h = 768;
+view_w = 1024 - 64;
+view_h = 768 - 64;
 
 xTo = xstart;
 yTo = ystart;

@@ -1,4 +1,4 @@
 steped = false;
 
-grav = 0.1;
+grav = 0.05;
 vsp = 0;

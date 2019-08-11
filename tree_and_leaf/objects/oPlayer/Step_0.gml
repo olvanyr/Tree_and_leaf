@@ -1,7 +1,7 @@
 if !instance_exists(oInput)
 {
 	input = instance_create_layer(0,0,"Instances",oInput);
-}
+}else input = oInput;
 
 phy_fixed_rotation = true;
 friction = normal_friction;

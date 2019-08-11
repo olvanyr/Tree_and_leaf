@@ -7,7 +7,7 @@ last_grounded = false;
 dir = 0;
 move = 0;
 
-grav = 30;
+grav = 25;
 gravity_change = false;
 
 normal_friction = 0.5;
@@ -28,7 +28,7 @@ air_speed_max = air_speed;
 
 jumping = true;
 jump_dir = 0;
-jump_impultion = 38;
+jump_impultion = 42;
 jump_timer = 0;
 
 physics_world_gravity(0, grav);
@@ -39,4 +39,4 @@ physics_world_gravity(0, grav);
 if !instance_exists(oInput)
 {
 	input = instance_create_layer(0,0,"Instances",oInput);
-}
+}else input = oInput;
