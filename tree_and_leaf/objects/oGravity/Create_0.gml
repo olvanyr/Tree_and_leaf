@@ -47,6 +47,14 @@ switch(tableau)
 	gravity_wave_length = 600;
 	}
 	break;
+	case rTableau5 : 
+	{
+	min_time = 500;
+	max_time = 700;
+
+	gravity_wave_length = 300;
+	}
+	break;
 }
 
 
