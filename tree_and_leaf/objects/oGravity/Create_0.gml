@@ -9,13 +9,24 @@ color = c_blue;
 timer = 0;
 gravity_change = false;
 
+tableau = noone;
+
+tableau = room;
 
 switch(tableau)
 {
 	case rTableau1 : 
 	{
-	min_time = 500;
-	max_time = 800;
+	min_time = 500000000000;
+	max_time = 800000000000;
+
+	gravity_wave_length = 300;
+	}
+	break;
+	case rTableau2 : 
+	{
+	min_time = 500000000000;
+	max_time = 800000000000;
 
 	gravity_wave_length = 300;
 	}
@@ -25,7 +36,15 @@ switch(tableau)
 	min_time = 500;
 	max_time = 800;
 
-	gravity_wave_length = 300;
+	gravity_wave_length = 600;
+	}
+	break;
+	case rTableau4 : 
+	{
+	min_time = 500;
+	max_time = 800;
+
+	gravity_wave_length = 600;
 	}
 	break;
 }

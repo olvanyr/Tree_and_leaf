@@ -14,6 +14,13 @@ if last_grounded != grounded && grounded == true && jump_timer > 20
 	audio_play_sound(aJumpland,5,0);
 }
 
+remain_jump_timer ++;
+
+if grounded
+{
+	remain_jump_timer = 0;
+}
+
 if jumping
 {
 	jump_timer ++;
@@ -46,7 +53,7 @@ if grounded && (input.left || input.right)
 }
 
 
-if !input.right && !input.left && !jumping
+if !input.right && !input.left && grounded
 {
 	set_state_sprite(sPlayer_idle,0.1,0);
 	dir = 0;
@@ -80,7 +87,6 @@ if grav < 0
 {
 	if phy_speed_y < 0
 	{
-		jumping = true;
 		grounded = false;
 	}
 }
@@ -89,12 +95,11 @@ if grav > 0
 {
 	if phy_speed_y > 0
 	{
-		jumping = true;
 		grounded = false;
 	}
 }
 
-if(input.jump && !jumping)
+if(input.jump && remain_jump_timer < 5) && !jumping
 {
 	physics_apply_impulse(x,y,0,-jump_impultion);
 	screenshake(3,3);

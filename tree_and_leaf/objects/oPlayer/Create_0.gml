@@ -30,6 +30,7 @@ jumping = true;
 jump_dir = 0;
 jump_impultion = 42;
 jump_timer = 0;
+remain_jump_timer = 0;
 
 physics_world_gravity(0, grav);
 
