@@ -10,6 +10,8 @@ if last_grounded != grounded && grounded == true && jump_timer > 20
 {
 	move_speed = 0;
 	screenshake(4,3);
+	audio_sound_pitch(aJumpland,choose(0.8,1.0,1.2));
+	audio_play_sound(aJumpland,5,0);
 }
 
 if jumping
@@ -32,6 +34,15 @@ if input.left
 	dir = -1;
 	image_xscale = dir;
 	set_state_sprite(sPlayer_walk,0.6,0);
+}
+
+if grounded && (input.left || input.right)
+{
+	if animation_hit_frame(1) || animation_hit_frame(5)
+	{
+		audio_sound_pitch(aFootstep,choose(0.8,1.0,1.2));
+		audio_play_sound(aFootstep,5,0);
+	}
 }
 
 
@@ -103,11 +114,14 @@ gravity_change = global.gravity_change;
 
 physics_world_gravity(0, grav);
 
-if y <= room_height/2
+if y <= room_height/2 && global.gravity_change
 {
 	image_yscale = -1;
 }else image_yscale = 1;
-
+if y > room_height/2 && !global.gravity_change
+{
+	image_yscale = 1;
+}
 
 if place_empty(x,y) && jump_timer > 3
 {
