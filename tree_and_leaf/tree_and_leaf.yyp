@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "2a008b93-5e8c-4bb7-af7f-807c9327d0a6",
+            "Value": {
+                "id": "c212f3aa-df5f-45ba-b040-990033547df8",
+                "resourcePath": "objects\\oLeaf\\oLeaf.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2ab7c389-c54d-404b-9c85-04963065e07a",
             "Value": {
                 "id": "08daf750-d5e2-4dc9-bd00-dbb2edaf59c9",
@@ -212,6 +220,14 @@
                 "id": "0a9e3572-311d-486c-9c07-f1c7dc8302dc",
                 "resourcePath": "views\\2fd6e40e-79b9-4eca-9e7c-29c9a14f06e8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "314e9562-2898-4492-8c32-42cf82d7e34f",
+            "Value": {
+                "id": "c002eefc-4e77-4992-890a-676c1490a0c2",
+                "resourcePath": "objects\\oJukebox\\oJukebox.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -292,6 +308,14 @@
                 "id": "76733532-5834-4b4f-9b69-83f5846d9869",
                 "resourcePath": "rooms\\rTableau3\\rTableau3.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "57073cf4-c0ca-4000-b4b0-6f896d69b840",
+            "Value": {
+                "id": "9c58bfa5-0c6e-4be0-b8c1-f899039bd6bc",
+                "resourcePath": "sprites\\leaf\\leaf.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -415,6 +439,14 @@
             }
         },
         {
+            "Key": "83c2071b-61ae-48b0-bf3c-34d3bcb1e6d1",
+            "Value": {
+                "id": "082c4785-8eec-4eaf-9ce4-61e531207e69",
+                "resourcePath": "rooms\\rTableau_last\\rTableau_last.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "8a4ced20-3d19-4296-abe0-8c1b952b1d60",
             "Value": {
                 "id": "0e8c9cf2-2ed2-430c-a8d3-ec63b2afb3fe",
@@ -476,6 +508,14 @@
                 "id": "0a8aeb2f-7e98-45a7-9653-a50c0c5f74b1",
                 "resourcePath": "sprites\\sCollision\\sCollision.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a646123c-d767-451d-ab90-b1ac1ff35e1b",
+            "Value": {
+                "id": "ad50ca11-53e0-4de7-9720-7557b8e61289",
+                "resourcePath": "sounds\\_0ula\\_0ula.yy",
+                "resourceType": "GMSound"
             }
         },
         {

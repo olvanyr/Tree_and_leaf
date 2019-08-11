@@ -102,6 +102,20 @@
             "value": "0",
             "varName": "next_room",
             "varType": 0
+        },
+        {
+            "id": "5080426a-3141-42f4-b2e2-039b82aa54a9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "new_music",
+            "varType": 0
         }
     ],
     "solid": false,

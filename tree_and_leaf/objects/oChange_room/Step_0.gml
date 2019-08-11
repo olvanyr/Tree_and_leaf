@@ -7,4 +7,5 @@ if place_meeting(x,y,oPlayer)
 	oCamera.y = y_next;
 	oPlayer.x_start = x_next;
 	oPlayer.y_start = y_next;
+	global.new_music = new_music;
 }
