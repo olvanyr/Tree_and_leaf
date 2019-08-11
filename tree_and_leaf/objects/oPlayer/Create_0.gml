@@ -7,7 +7,7 @@ last_grounded = false;
 dir = 0;
 move = 0;
 
-grav = 25;
+grav = 30;
 gravity_change = false;
 
 normal_friction = 0.5;

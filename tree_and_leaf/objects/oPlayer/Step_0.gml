@@ -6,7 +6,6 @@ if !instance_exists(oInput)
 phy_fixed_rotation = true;
 friction = normal_friction;
 
-
 if last_grounded != grounded && grounded == true && jump_timer > 20
 {
 	move_speed = 0;
@@ -26,13 +25,13 @@ if input.right
 {
 	dir = 1;
 	image_xscale = dir;
-	set_state_sprite(sPlayer_walk,0.3,0);
+	set_state_sprite(sPlayer_walk,0.6,0);
 }
 if input.left
 {
 	dir = -1;
 	image_xscale = dir;
-	set_state_sprite(sPlayer_walk,0.3,0);
+	set_state_sprite(sPlayer_walk,0.6,0);
 }
 
 
@@ -44,6 +43,7 @@ if !input.right && !input.left && !jumping
 	air_speed -= acceleration;
 }else
 {
+	grounded = true;
 	move_speed += acceleration;
 	air_speed += acceleration;
 }
@@ -107,3 +107,32 @@ if y <= room_height/2
 {
 	image_yscale = -1;
 }else image_yscale = 1;
+
+
+if place_empty(x,y) && jump_timer > 3
+{
+	if grav > 0
+	{
+		if phy_position_y > phy_position_yprevious
+		{
+			set_state_sprite(sPlayer_up,0,0);	
+		}
+		if phy_position_y <= phy_position_yprevious
+		{
+			set_state_sprite(sPlayer_dawn,0,0);	
+		}
+	}
+	if grav < 0
+	{
+		if phy_position_y > phy_position_yprevious
+		{
+			set_state_sprite(sPlayer_up,0,0);	
+		}
+		if phy_position_y <= phy_position_yprevious
+		{
+			set_state_sprite(sPlayer_dawn,0,0);	
+		}
+	}
+}
+
+//show_debug_message("sprite index" + string(sprite_get_name(sprite_index)));
