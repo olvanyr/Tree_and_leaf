@@ -25,15 +25,20 @@ last_grounded = grounded
 if input.right
 {
 	dir = 1;
+	image_xscale = dir;
+	set_state_sprite(sPlayer_walk,0.3,0);
 }
 if input.left
 {
 	dir = -1;
+	image_xscale = dir;
+	set_state_sprite(sPlayer_walk,0.3,0);
 }
 
 
 if !input.right && !input.left && !jumping
 {
+	set_state_sprite(sPlayer_idle,0.1,0);
 	dir = 0;
 	move_speed -= acceleration;
 	air_speed -= acceleration;
@@ -97,3 +102,8 @@ if gravity_change != global.gravity_change
 gravity_change = global.gravity_change;
 
 physics_world_gravity(0, grav);
+
+if y <= room_height/2
+{
+	image_yscale = -1;
+}else image_yscale = 1;

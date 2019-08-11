@@ -19,4 +19,9 @@ if !gravity_change
 	}else global.gravity_change = false;
 }
 
+if keyboard_check_pressed(ord("E"))
+{
+	instance_create_layer(0,0,"Explosion",oExplosion);
+}
+
 show_debug_message(global.gravity_change);
