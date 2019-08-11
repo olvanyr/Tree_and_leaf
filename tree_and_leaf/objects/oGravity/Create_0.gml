@@ -14,8 +14,8 @@ switch(tableau)
 {
 	case rTableau1 : 
 	{
-	min_time = 100000000;
-	max_time = 100000000;
+	min_time = 500;
+	max_time = 800;
 
 	gravity_wave_length = 300;
 	}

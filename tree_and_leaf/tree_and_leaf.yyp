@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "ca11331b-f6a0-4ae7-976e-29edf0c9e944",
+            "Value": {
+                "id": "8379a9c6-e91d-42f3-bda1-687f74ebadf7",
+                "resourcePath": "sounds\\shinshi__into_the_sun\\shinshi__into_the_sun.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "cc231136-e3fa-4064-8763-ee4029e2e983",
             "Value": {
                 "id": "466c065b-3500-46e1-8520-fddff33d9863",

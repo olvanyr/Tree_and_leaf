@@ -31,6 +31,9 @@ if alpha > 0
 
 if gravity_change
 {
+	audio_sound_gain(shinshi__into_the_sun,1,1000);
+	audio_play_sound(shinshi__into_the_sun,5,1);
+	
 	if alpha < alpha_max
 	{
 		alpha += 0.001;
@@ -43,6 +46,7 @@ if !gravity_change
 	{
 		alpha -= 0.001;
 	}else global.gravity_change = false;
+	audio_sound_gain(shinshi__into_the_sun,0,1000);
 }
 
 if keyboard_check_pressed(ord("E"))
