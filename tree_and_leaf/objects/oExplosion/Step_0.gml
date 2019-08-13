@@ -1,4 +1,4 @@
-
+global.explosition = true;
 
 if animation_hit_frame(13)
 {

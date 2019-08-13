@@ -1,7 +1,15 @@
+/*
 if keyboard_check_pressed(ord("P"))
 {
 	gravity_change = !gravity_change;
 }
+
+if keyboard_check_pressed(ord("E"))
+{
+	instance_create_layer(0,0,"Explosion",oExplosion);
+}
+
+*/
 
 timer ++;
 
@@ -49,8 +57,10 @@ if !gravity_change
 	audio_sound_gain(shinshi__into_the_sun,0,3000);
 }
 
-if keyboard_check_pressed(ord("E"))
+if !global.gravity_change
 {
-	instance_create_layer(0,0,"Explosion",oExplosion);
+	if audio_is_playing(shinshi__into_the_sun)
+	{
+		audio_sound_gain(shinshi__into_the_sun,0,1000);
+	}
 }
-

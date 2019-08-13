@@ -30,20 +30,20 @@ if jumping
 last_grounded = grounded
 
 //move
-if input.right
+if input.right && !global.explosition
 {
 	dir = 1;
 	image_xscale = dir;
 	set_state_sprite(sPlayer_walk,0.6,0);
 }
-if input.left
+if input.left&& !global.explosition
 {
 	dir = -1;
 	image_xscale = dir;
 	set_state_sprite(sPlayer_walk,0.6,0);
 }
 
-if grounded && (input.left || input.right)
+if grounded && (input.left || input.right) && !global.explosition
 {
 	if animation_hit_frame(1) || animation_hit_frame(5)
 	{
@@ -99,7 +99,7 @@ if grav > 0
 	}
 }
 
-if(input.jump && remain_jump_timer < 5) && !jumping
+if(input.jump && remain_jump_timer < 5) && !jumping && !global.explosition
 {
 	physics_apply_impulse(x,y,0,-jump_impultion);
 	screenshake(3,3);
