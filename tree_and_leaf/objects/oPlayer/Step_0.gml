@@ -61,7 +61,6 @@ if !input.right && !input.left && grounded
 	air_speed -= acceleration;
 }else
 {
-	grounded = true;
 	move_speed += acceleration;
 	air_speed += acceleration;
 }
@@ -69,7 +68,7 @@ if !input.right && !input.left && grounded
 move_speed = clamp(move_speed, 0, move_speed_max);
 air_speed = clamp(air_speed, 0, air_speed_max);
 
-if jumping
+if jumping || !grounded
 {
 	move = (air_speed * dir) + (move_speed * jump_dir);
 } else 
@@ -85,7 +84,7 @@ phy_position_x += move;
 //jump
 if grav < 0
 {
-	if phy_speed_y < 0
+	if phy_speed_y != 0
 	{
 		grounded = false;
 	}
@@ -93,7 +92,7 @@ if grav < 0
 
 if grav > 0
 {
-	if phy_speed_y > 0
+	if phy_speed_y != 0
 	{
 		grounded = false;
 	}

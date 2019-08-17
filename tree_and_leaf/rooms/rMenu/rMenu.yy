@@ -62,7 +62,7 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "spriteId": "30f19bd8-5bac-411e-922d-f88428cd701a",
+            "spriteId": "a6b141ad-229d-4287-b454-606c85b371e1",
             "stretch": false,
             "userdefined_animFPS": false,
             "userdefined_depth": false,
@@ -77,7 +77,7 @@
             "name": "Assets_1",
             "id": "3c0e6600-edc5-4e93-b9d0-fc78602e27f7",
             "assets": [
-{"__type": "GMRSpriteGraphic_Model:#YoYoStudio.MVCFormat","name": "graphic_3DC50662","id": "e348348a-5ccd-4fcc-ade7-7961bf1098f8","animationFPS": 5,"animationSpeedType": "0","colour": { "Value": 4294967295 },"frameIndex": 0,"ignore": false,"inheritItemSettings": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRSpriteGraphic","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","spriteId": "2dbee0af-f37d-49d3-bc7f-3b9c907d457b","userdefined_animFPS": true,"x": 512,"y": 640}
+{"__type": "GMRSpriteGraphic_Model:#YoYoStudio.MVCFormat","name": "graphic_3DC50662","id": "e348348a-5ccd-4fcc-ade7-7961bf1098f8","animationFPS": 5,"animationSpeedType": "0","colour": { "Value": 4294967295 },"frameIndex": 0,"ignore": false,"inheritItemSettings": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRSpriteGraphic","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","spriteId": "2dbee0af-f37d-49d3-bc7f-3b9c907d457b","userdefined_animFPS": true,"x": 498,"y": 627}
             ],
             "depth": 200,
             "grid_x": 32,
@@ -110,7 +110,7 @@
             "grid_y": 32,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
-            "hspeed": -0.5,
+            "hspeed": 0,
             "htiled": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
@@ -123,7 +123,7 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "spriteId": "9f872f39-116b-4bf4-bc9e-e019cd05963b",
+            "spriteId": "4b154de3-02e4-4977-bf17-6dab5e46ce99",
             "stretch": false,
             "userdefined_animFPS": false,
             "userdefined_depth": false,
