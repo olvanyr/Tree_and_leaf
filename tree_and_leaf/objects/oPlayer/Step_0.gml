@@ -3,6 +3,12 @@ if !instance_exists(oInput)
 	input = instance_create_layer(0,0,"Instances",oInput);
 }else input = oInput;
 
+if global.explosition
+{
+	set_state_sprite(sPlayer_idle,0.1,0);
+}
+
+
 phy_fixed_rotation = true;
 friction = normal_friction;
 
@@ -30,18 +36,26 @@ if jumping
 last_grounded = grounded
 
 //move
-if input.right && !global.explosition
+
+if instance_exists(oLeaf)
 {
-	dir = 1;
-	image_xscale = dir;
-	set_state_sprite(sPlayer_walk,0.6,0);
+	if oLeaf.fall != true
+	{
+		if input.right && !global.explosition
+		{
+			dir = 1;
+			image_xscale = dir;
+			set_state_sprite(sPlayer_walk,0.6,0);
+		}
+		if input.left&& !global.explosition
+		{
+			dir = -1;
+			image_xscale = dir;
+			set_state_sprite(sPlayer_walk,0.6,0);
+		}
+	}
 }
-if input.left&& !global.explosition
-{
-	dir = -1;
-	image_xscale = dir;
-	set_state_sprite(sPlayer_walk,0.6,0);
-}
+
 
 if grounded && (input.left || input.right) && !global.explosition
 {
@@ -98,13 +112,21 @@ if grav > 0
 	}
 }
 
-if(input.jump && remain_jump_timer < 5) && !jumping && !global.explosition
+if instance_exists(oLeaf)
 {
-	physics_apply_impulse(x,y,0,-jump_impultion);
-	screenshake(3,3);
-	jumping = true;
-	grounded = false;
+	if oLeaf.fall != true
+	{
+		if(input.jump && remain_jump_timer < 5) && !jumping && !global.explosition
+		{
+			physics_apply_impulse(x,y,0,-jump_impultion);
+			screenshake(3,3);
+			jumping = true;
+			grounded = false;
+		}
+	}
 }
+
+
 
 
 //change gravity

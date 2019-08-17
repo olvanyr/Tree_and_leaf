@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "1a7a61d6-dcc1-4ca8-ad95-88162168a098",
+            "Value": {
+                "id": "3144dc8b-c920-4f77-93d9-34fddf6f2888",
+                "resourcePath": "sprites\\tableau_final_front\\tableau_final_front.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e6bc1a8-ce36-49ad-8857-0a093859a0ff",
             "Value": {
                 "id": "42d48ab6-55f6-4dd1-bff5-b07e1f08485c",
@@ -308,6 +316,14 @@
                 "id": "0a9e3572-311d-486c-9c07-f1c7dc8302dc",
                 "resourcePath": "views\\2fd6e40e-79b9-4eca-9e7c-29c9a14f06e8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "304d50e8-cadc-4a6e-8473-66af9f07fda7",
+            "Value": {
+                "id": "82b0417e-c89c-4f36-aff0-fea5d08ce0cf",
+                "resourcePath": "objects\\oTriger\\oTriger.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -751,6 +767,14 @@
             }
         },
         {
+            "Key": "92de6d0e-1c29-4b82-9ab3-7f98d7dd7604",
+            "Value": {
+                "id": "ba67c088-1644-4df0-a62f-bb4d5e024084",
+                "resourcePath": "sprites\\tableau_final_back\\tableau_final_back.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "977d0764-c1a3-461a-8cc4-48f5aa1aab0d",
             "Value": {
                 "id": "7f77d29c-4e74-425d-a389-b2b7539556bc",
@@ -1084,6 +1108,14 @@
                 "id": "9ac2376e-aabf-4df6-bd6c-42f5540e4e9d",
                 "resourcePath": "sprites\\rock2_t_l\\rock2_t_l.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dab15e18-096e-4341-8044-72b319b7c086",
+            "Value": {
+                "id": "8fe9a056-9e05-4d07-8c88-82231dd685e4",
+                "resourcePath": "views\\dab15e18-096e-4341-8044-72b319b7c086.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

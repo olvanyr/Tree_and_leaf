@@ -1,5 +1,3 @@
-instance_destroy(oPlayer);
-
 var s_width = sprite_width;
 var s_height = sprite_height;
 var r_width = room_width;
