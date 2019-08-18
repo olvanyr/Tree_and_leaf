@@ -37,24 +37,23 @@ last_grounded = grounded
 
 //move
 
-if instance_exists(oLeaf)
+
+if global.fall != true
 {
-	if oLeaf.fall != true
+	if input.right && !global.explosition
 	{
-		if input.right && !global.explosition
-		{
-			dir = 1;
-			image_xscale = dir;
-			set_state_sprite(sPlayer_walk,0.6,0);
-		}
-		if input.left&& !global.explosition
-		{
-			dir = -1;
-			image_xscale = dir;
-			set_state_sprite(sPlayer_walk,0.6,0);
-		}
+		dir = 1;
+		image_xscale = dir;
+		set_state_sprite(sPlayer_walk,0.6,0);
+	}
+	if input.left&& !global.explosition
+	{
+		dir = -1;
+		image_xscale = dir;
+		set_state_sprite(sPlayer_walk,0.6,0);
 	}
 }
+
 
 
 if grounded && (input.left || input.right) && !global.explosition
@@ -112,17 +111,14 @@ if grav > 0
 	}
 }
 
-if instance_exists(oLeaf)
+if global.fall != true
 {
-	if oLeaf.fall != true
+	if(input.jump && remain_jump_timer < 5) && !jumping && !global.explosition
 	{
-		if(input.jump && remain_jump_timer < 5) && !jumping && !global.explosition
-		{
-			physics_apply_impulse(x,y,0,-jump_impultion);
-			screenshake(3,3);
-			jumping = true;
-			grounded = false;
-		}
+		physics_apply_impulse(x,y,0,-jump_impultion);
+		screenshake(3,3);
+		jumping = true;
+		grounded = false;
 	}
 }
 

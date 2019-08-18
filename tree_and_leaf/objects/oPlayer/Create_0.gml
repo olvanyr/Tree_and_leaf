@@ -35,6 +35,7 @@ remain_jump_timer = 0;
 physics_world_gravity(0, grav);
 
 global.explosition = false;
+global.fall = false;
 
 //dependencises
 
