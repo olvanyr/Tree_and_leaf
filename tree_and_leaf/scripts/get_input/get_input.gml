@@ -6,6 +6,8 @@ left = keyboard_check(vk_left);
 jump = keyboard_check_pressed(vk_up);
 if keyboard_check_pressed(vk_space) jump = 1;
 if keyboard_check_pressed(ord("Z")) jump = 1;
+if keyboard_check_pressed(ord("Q")) left = 1;
+if keyboard_check_pressed(ord("d")) right = 1;
 
 //gamepad
 if gamepad_button_check_pressed(0,gp_face1) jump = 1;
